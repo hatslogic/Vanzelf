@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'Averta';
+    font-weight: 200;
+    font-style: normal;
+    src: url('../fonts/Averta-Regular.woff2') format('woff2'), url('../fonts/Averta-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averta';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../fonts/Averta-Bold.woff2') format('woff2'), url('../fonts/Averta-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averta';
+    font-weight: 900;
+    font-style: normal;
+    src: url('../fonts/Averta-Black.woff2') format('woff2'), url('../fonts/Averta-Black.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Averta';
+    font-weight: 800;
+    font-style: normal;
+    src: url('../fonts/Averta-ExtraBold.woff2') format('woff2'), url('../fonts/Averta-ExtraBold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Averta;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/Averta-Semibold.woff2") format("woff2"), url("../fonts/Averta-Semibold.woff") format("woff");
+}
+
+@font-face {
+    font-family: Averta;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/Averta-Light.woff2") format("woff2"), url("../fonts/Averta-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: Averta;
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    src: url("../fonts/Averta-Light-Italic.woff2") format("woff2"), url("../fonts/Averta-Light-Italic.woff") format("woff");
+}
+
+
+/*** Reset **************************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    color: #427067;
+    font-family: Averta;
+}
+
+body {
+    font-family: Averta;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #427067;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Averta;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    color: #427067;
+}
+
+h1 {
+    font-size: 4.375rem;
+    line-height: 1.11;
+    font-weight: 800;
+    line-height: 1.07;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.11;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #223d3e;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.57;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.469rem;
+    color: #223d3e;
+    margin: 0px;
+    padding: 0 0 34px;
+}
+
+ul {
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+ul li {
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+a {
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0px none !important;
+}
+
+img,
+a img {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none 0;
+    outline: 0px none !important;
+}
+
+input:focus,
+textarea:focus,
+a:focus {
+    outline: 0px none !important;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #427067;
+    font-weight: 400;
+    margin: 0;
+    max-width: 760px
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #223d3e;
+    font-weight: 600
+}
+
+
+/******************************************************/
+
+.main-header-outer {
+    position: sticky;
+    background-color: #fff;
+    top: 0;
+    z-index: 20;
+    padding: 0 60px;
+}
+
+.main-header-outer .header-innerblock {
+    height: 4rem;
+    border-bottom: 1px solid #f0e3d3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header-outer .header-innerblock .logo-continer {
+    margin-right: auto;
+    width: 4.375rem;
+    height: 3.125rem;
+}
+
+.main-header-outer .header-innerblock .right-outerblock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.main-header-outer .header-innerblock .right-outerblock .nav-outer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.main-header-outer .header-innerblock .right-outerblock ul {
+    width: auto;
+    height: auto;
+    float: left;
+    list-style: none;
+}
+
+.main-header-outer .header-innerblock .right-outerblock ul li {
+    width: auto;
+    height: auto;
+    float: left;
+    list-style: none;
+    padding: 0 0.75rem;
+}
