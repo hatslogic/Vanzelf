@@ -15,11 +15,6 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 800; // Pixels.
 }
 
-
-//custom functions
-require_once(get_stylesheet_directory() . '/custom-functions.php');
-
-
 if ( ! function_exists( 'hello_elementor_setup' ) ) {
 	/**
 	 * Set up theme support.
@@ -188,3 +183,7 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 		}
 	}
 }
+ 
+//custom functions
+require_once(get_stylesheet_directory() . '/custom-functions.php');
+
