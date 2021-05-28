@@ -1,38 +1,37 @@
 <?php
 /**
- * The main template file
+ * The site's entry point.
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * Loads the relevant template part,
+ * the loop is executed (when needed) by the relevant template part.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @package HelloElementor
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 get_header();
 
-if ( have_posts() ) {
+$is_elementor_theme_exist = function_exists( 'elementor_theme_do_location' );
 
-	// Load posts loop.
-	while ( have_posts() ) {
-		the_post();
-
-		get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) );
+if ( is_singular() ) {
+	if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'single' ) ) {
+		get_template_part( 'template-parts/single' );
 	}
-
-	// Previous/next page navigation.
-	twenty_twenty_one_the_posts_navigation();
-
+} elseif ( is_archive() || is_home() ) {
+	if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'archive' ) ) {
+		get_template_part( 'template-parts/archive' );
+	}
+} elseif ( is_search() ) {
+	if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'archive' ) ) {
+		get_template_part( 'template-parts/search' );
+	}
 } else {
-
-	// If no content, include the "No posts found" template.
-	get_template_part( 'template-parts/content/content-none' );
-
+	if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'single' ) ) {
+		get_template_part( 'template-parts/404' );
+	}
 }
 
 get_footer();
