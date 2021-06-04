@@ -23,8 +23,38 @@ if ( ! defined( 'ABSPATH' ) ) {
 <body <?php body_class(); ?>>
 
 <?php
-hello_elementor_body_open();
+ hello_elementor_body_open();
 
-if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
-	get_template_part( 'template-parts/header' );
-}
+// if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
+// 	get_template_part( 'template-parts/header' );
+// }
+
+?>
+<header class="main-header-outer">
+	<div class="header-innerblock">
+		<div class="logo-continer">
+			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/vanzelf_logo.svg" alt="Logo"></a>
+		</div>
+		<div class="right-outerblock">
+			<div class="nav-content"> 
+
+				<?php wp_nav_menu( array( 'menu' => 'mainheadernav' ) ); ?>
+   
+
+			</div>
+			<div class="buttons-container">
+				<div class="main-btn"><a href="#">Schrijf je in</a></div>
+				<div class="badge-btn">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/verified-CIRE.png" alt="badge"></a>
+					<div class="badgedetails-block">
+						Vanzelf is aangesloten bij CIRE. Dit is terug te zien in het CIRE keurmerk. Dit initiatief wordt ondersteund door de Autoriteit Consument en Markt (ACM).
+					</div>
+				</div>
+			</div>
+			<div class="nav-trigger-cont">
+				<span></span><span></span><span></span>
+			</div> 
+		</div> 
+	</div>
+</header> 
+

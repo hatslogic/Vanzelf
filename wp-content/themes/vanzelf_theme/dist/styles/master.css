@@ -1,319 +1,810 @@
-@font-face {
-    font-family: 'Averta';
-    font-weight: 200;
-    font-style: normal;
-    src: url('../fonts/Averta-Regular.woff2') format('woff2'), url('../fonts/Averta-Regular.woff') format('woff');
-    font-display: swap;
-}
+    @font-face {
+        font-family: 'Averta';
+        font-weight: 200;
+        font-style: normal;
+        src: url('../fonts/Averta-Regular.woff2') format('woff2'), url('../fonts/Averta-Regular.woff') format('woff');
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Averta';
+        font-weight: bold;
+        font-style: normal;
+        src: url('../fonts/Averta-Bold.woff2') format('woff2'), url('../fonts/Averta-Bold.woff') format('woff');
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Averta';
+        font-weight: 900;
+        font-style: normal;
+        src: url('../fonts/Averta-Black.woff2') format('woff2'), url('../fonts/Averta-Black.woff') format('woff');
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Averta';
+        font-weight: 800;
+        font-style: normal;
+        src: url('../fonts/Averta-ExtraBold.woff2') format('woff2'), url('../fonts/Averta-ExtraBold.woff') format('woff');
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Averta';
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src: url("../fonts/Averta-Semibold.woff2") format("woff2"), url("../fonts/Averta-Semibold.woff") format("woff");
+    }
+    
+    @font-face {
+        font-family: 'Averta';
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+        src: url("../fonts/Averta-Light.woff2") format("woff2"), url("../fonts/Averta-Light.woff") format("woff");
+    }
+    
+    @font-face {
+        font-family: 'Averta';
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+        src: url("../fonts/Averta-Light-Italic.woff2") format("woff2"), url("../fonts/Averta-Light-Italic.woff") format("woff");
+    }
+    /*** Reset **************************************************/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        color: #427067;
+        font-family: 'Averta' !important;
+    }
+    
+    body {
+        font-family: 'Averta' !important;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #427067;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Averta' !important;
+        font-style: normal;
+        margin: 0px;
+        padding: 0px;
+        color: #427067;
+    }
+    
+    h1 {
+        font-size: 4.375rem;
+        line-height: 1.11;
+        font-weight: 800;
+        line-height: 1.07;
+    }
+    
+    h2 {
+        font-size: 4rem;
+        line-height: 1.11;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    
+    h3 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    
+    h4 {
+        font-size: 2.25rem;
+        font-weight: 600;
+        color: #223d3e;
+    }
+    
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.55;
+    }
+    
+    h6 {
+        font-size: 1rem;
+        line-height: 1.57;
+        font-weight: 600;
+    }
+    
+    p {
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: #223d3e;
+        margin: 0px;
+        padding: 0 0 34px;
+    }
+    
+    ul {
+        background: none;
+        margin: 0px;
+        padding: 0px;
+        list-style-image: none;
+        list-style-type: none;
+    }
+    
+    ul li {
+        background: none;
+        margin: 0px;
+        padding: 0px;
+        list-style-image: none;
+        list-style-type: none;
+    }
+    
+    a {
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+        transition: all 300ms ease-in;
+        font-family: 'Averta' !important;
+    }
+    
+    a,
+    a:hover,
+    a:focus {
+        text-decoration: none;
+        outline: 0px none !important;
+    }
+    
+    img,
+    a img {
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border: none 0;
+        outline: 0px none !important;
+    }
+    
+    input:focus,
+    textarea:focus,
+    a:focus {
+        outline: 0px none !important;
+    }
+    
+    .fa,
+    .fas {
+        font-family: "Font Awesome 5 Free" !important;
+        color: #000000!important;
+        font-weight: 400 !important;
+    }
+    
+    .image-bg-overlay-yellow .elementor-widget-container:before {
+        background-color: #efc771;
+        position: absolute;
+        transform: translate(-40px, 40px);
+        display: block;
+        width: 424px;
+        height: 424px;
+        z-index: -99;
+        content: "";
+    }
+    
+    .image-bg-overlay-green .elementor-widget-container:before {
+        background-color: #427067;
+        position: absolute;
+        right: -42px;
+        top: 104px;
+        display: block;
+        width: 424px;
+        height: 424px;
+        z-index: -99;
+        content: "";
+    }
+    /******************************************************/
+    
+    .main-header-outer {
+        position: sticky;
+        background-color: #fff;
+        top: 0;
+        z-index: 2000;
+        padding: 0 60px;
+    }
+    
+    .main-header-outer .header-innerblock {
+        height: auto;
+        border-bottom: 1px solid #f0e3d3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 0;
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+    
+    .main-header-outer .header-innerblock .logo-continer {
+        margin-right: auto;
+        width: 4.375rem;
+        height: 3.125rem;
+    }
+    
+    .main-header-outer .header-innerblock .right-outerblock {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    .main-header-outer .header-innerblock .right-outerblock .nav-content {
+        width: auto;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    .main-header-outer .header-innerblock .right-outerblock ul {
+        width: auto;
+        height: auto;
+        float: left;
+        list-style: none;
+    }
+    
+    .main-header-outer .header-innerblock .right-outerblock ul li {
+        width: auto;
+        height: auto;
+        float: left;
+        list-style: none;
+        padding: 0 0.75rem;
+    }
+    
+    .main-header-outer .header-innerblock .right-outerblock ul li a {
+        color: #427067;
+    }
+    
+    .main-header-outer .header-innerblock .right-outerblock ul li a:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    
+    .right-outerblock .buttons-container {
+        width: auto;
+        height: auto;
+        float: left;
+    }
+    
+    .right-outerblock .buttons-container .main-btn {
+        width: auto;
+        height: auto;
+        float: left;
+        padding: 0 12px;
+    }
+    
+    .right-outerblock .buttons-container .main-btn a {
+        width: auto;
+        height: auto;
+        float: left;
+        color: #223d3e;
+        background-color: #EFC771;
+        border-radius: 50px 50px 50px 50px;
+        padding: 6px 24px 7px 24px;
+    }
+    
+    .right-outerblock .buttons-container .main-btn a:hover {
+        color: #FFFFFF;
+        background-color: #427067;
+    }
+    
+    .badge-btn {
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-left: 12px;
+        position: relative;
+        cursor: help;
+    }
+    
+    .badge-btn a {
+        width: 40px;
+        height: 40px;
+        float: left;
+        cursor: help;
+    }
+    
+    .badge-btn img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .badge-btn .badgedetails-block {
+        width: 370px;
+        position: fixed;
+        right: 10px;
+        top: 55px;
+        background: #427067;
+        border-radius: 9px;
+        color: #FFFFFF;
+        opacity: 0;
+        visibility: hidden;
+        font-family: 'Averta';
+        font-weight: 200;
+        padding: 15px 15px;
+        line-height: 22px;
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        -o-transition: all 300ms ease-in;
+        transition: all 300ms ease-in;
+    }
+    
+    .admin-bar .badge-btn .badgedetails-block {
+        top: 87px;
+    }
+    
+    .badge-btn:hover .badgedetails-block {
+        top: 62px;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .admin-bar .badge-btn:hover .badgedetails-block {
+        top: 94px;
+    }
+    
+    .badge-btn .badgedetails-block:hover {
+        top: 55px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .nav-trigger-cont {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+        width: 25px;
+        height: 30px;
+        position: absolute;
+        top: 26px;
+        right: 12px;
+        display: none;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .nav-trigger-cont span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 16px;
+        background: #223d3e;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+    
+    .nav-trigger-cont span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    
+    .nav-trigger-cont span:nth-child(2) {
+        top: 4px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    
+    .nav-trigger-cont span:nth-child(3) {
+        top: 8px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    
+    .nav-trigger-cont.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: -2px;
+        left: 2px;
+    }
+    
+    .nav-trigger-cont.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+    
+    .nav-trigger-cont.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 10px;
+        left: 2px;
+    }
+    
+    @media only screen and (max-width:1023px) {
+        .main-header-outer {
+            padding: 0 24px;
+        }
+        .main-header-outer .header-innerblock .right-outerblock ul li {
+            padding: 0 0.5rem;
+        }
+    }
+    
+    @media only screen and (max-width:767px) {
+        .badge-btn .badgedetails-block {
+            width: 100vw;
+            right: 0;
+            text-align: left;
+            font-size: 14px;
+        }
+        .nav-trigger-cont {
+            display: block;
+        }
+        .mobilenav-activeblock {
+            overflow: hidden;
+        }
+        .main-header-outer {
+            padding: 0px;
+        }
+        .main-header-outer .header-innerblock {
+            padding: 7px 24px;
+            justify-content: flex-start;
+        }
+        .main-header-outer .header-innerblock .logo-continer {
+            width: 70px;
+            height: 50px;
+            float: left;
+        }
+        .main-header-outer .header-innerblock .logo-continer a {
+            width: 70px;
+            height: 50px;
+            float: left;
+        }
+        .mobilenav-activeblock .main-header-outer .header-innerblock .logo-continer a {
+            width: 85px;
+            height: 61px;
+            float: none;
+        }
+        .right-outerblock .buttons-container {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-right: 40px;
+        }
+        .main-header-outer .header-innerblock .right-outerblock .nav-content {
+            display: none;
+        }
+        .right-outerblock .buttons-container .main-btn {
+            padding-right: 0;
+        }
+        .mobilenav-activeblock .main-header-outer {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .mobilenav-activeblock .main-header-outer .header-innerblock {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: none;
+        }
+        .mobilenav-activeblock .main-header-outer .header-innerblock .right-outerblock .nav-content {
+            display: block;
+        }
+        .mobilenav-activeblock .main-header-outer .header-innerblock .right-outerblock {
+            flex-direction: column;
+        }
+        .main-header-outer .header-innerblock .right-outerblock {
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+        .main-header-outer .header-innerblock .right-outerblock .nav-content ul li {
+            width: 100%;
+            float: left;
+            padding: 18px 0;
+            text-align: center;
+        }
+        .main-header-outer .header-innerblock .right-outerblock .nav-content ul li a {
+            font-size: 1rem;
+            color: #427067;
+            text-decoration: none;
+        }
+        .mobilenav-activeblock .main-header-outer .header-innerblock .logo-continer {
+            width: 100%;
+            text-align: center;
+            height: auto;
+            padding: 45px 0 15px;
+            position: absolute;
+            top: 0;
+        }
+        .mobilenav-activeblock .main-header-outer .header-innerblock .logo-continer img {
+            width: 85px;
+        }
+        .mobilenav-activeblock .badge-btn {
+            display: none;
+        }
+        .mobilenav-activeblock .right-outerblock .buttons-container .main-btn {
+            padding: 0;
+        }
+        .mobilenav-activeblock .right-outerblock .buttons-container {
+            padding: 0;
+            margin-top: 40px;
+        }
+    }
+    
+    @media only screen and (max-height:500px) {
+        .mobilenav-activeblock .main-header-outer .header-innerblock {
+            display: block;
+        }
+        .mobilenav-activeblock .main-header-outer .header-innerblock .logo-continer {
+            position: relative;
+        }
+    }
+    
+    @media only screen and (max-width:360px) {
+        .main-header-outer .header-innerblock {
+            padding: 7px 10px;
+        }
+    }
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< About Page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    /* section.diagram-wrapper{
+    max-width:1096px;
+    margin: 0 auto;
+    height:760px;
 
-@font-face {
-    font-family: 'Averta';
-    font-weight: bold;
-    font-style: normal;
-    src: url('../fonts/Averta-Bold.woff2') format('woff2'), url('../fonts/Averta-Bold.woff') format('woff');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Averta';
-    font-weight: 900;
-    font-style: normal;
-    src: url('../fonts/Averta-Black.woff2') format('woff2'), url('../fonts/Averta-Black.woff') format('woff');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Averta';
-    font-weight: 800;
-    font-style: normal;
-    src: url('../fonts/Averta-ExtraBold.woff2') format('woff2'), url('../fonts/Averta-ExtraBold.woff') format('woff');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Averta;
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    src: url("../fonts/Averta-Semibold.woff2") format("woff2"), url("../fonts/Averta-Semibold.woff") format("woff");
-}
-
-@font-face {
-    font-family: Averta;
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-    src: url("../fonts/Averta-Light.woff2") format("woff2"), url("../fonts/Averta-Light.woff") format("woff");
-}
-
-@font-face {
-    font-family: Averta;
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-    src: url("../fonts/Averta-Light-Italic.woff2") format("woff2"), url("../fonts/Averta-Light-Italic.woff") format("woff");
-}
-
-
-/*** Reset **************************************************/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-    color: #427067;
-    font-family: Averta;
-}
-
-body {
-    font-family: Averta;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #427067;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Averta;
-    font-style: normal;
-    margin: 0px;
-    padding: 0px;
-    color: #427067;
-}
-
-h1 {
-    font-size: 4.375rem;
-    line-height: 1.11;
-    font-weight: 800;
-    line-height: 1.07;
-}
-
-h2 {
-    font-size: 4rem;
-    line-height: 1.11;
-    font-weight: 600;
-    line-height: 1.5;
-}
-
-h3 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    line-height: 1.5;
-}
-
-h4 {
-    font-size: 2.25rem;
-    font-weight: 600;
-    color: #223d3e;
-}
-
-h5 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.55;
-}
-
-h6 {
-    font-size: 1rem;
-    line-height: 1.57;
-    font-weight: 600;
-}
-
-p {
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: #223d3e;
-    margin: 0px;
-    padding: 0 0 34px;
-}
-
-ul {
-    background: none;
-    margin: 0px;
-    padding: 0px;
-    list-style-image: none;
-    list-style-type: none;
-}
-
-ul li {
-    background: none;
-    margin: 0px;
-    padding: 0px;
-    list-style-image: none;
-    list-style-type: none;
-}
-
-a {
-    -webkit-transition: all 300ms ease-in;
-    -moz-transition: all 300ms ease-in;
-    -ms-transition: all 300ms ease-in;
-    -o-transition: all 300ms ease-in;
-    transition: all 300ms ease-in;
-}
-
-a,
-a:hover,
-a:focus {
-    text-decoration: none;
-    outline: 0px none !important;
-}
-
-img,
-a img {
-    max-width: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: none 0;
-    outline: 0px none !important;
-}
-
-input:focus,
-textarea:focus,
-a:focus {
-    outline: 0px none !important;
-}
-
-
-/******* Header section ***********************************************/
-
-.main-header-outer {
-    position: sticky;
-    background-color: #fff;
-    top: 0;
-    z-index: 20;
-    padding: 0 60px;
-}
-
-.main-header-outer .header-innerblock {
-    height: 4rem;
-    border-bottom: 1px solid #f0e3d3;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main-header-outer .header-innerblock .logo-continer {
-    margin-right: auto;
-    width: 4.375rem;
-    height: 3.125rem;
-}
-
-.main-header-outer .header-innerblock .right-outerblock {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-}
-
-.main-header-outer .header-innerblock .right-outerblock .nav-outer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-}
-
-.main-header-outer .header-innerblock .right-outerblock ul {
-    width: auto;
-    height: auto;
-    float: left;
-    list-style: none;
-}
-
-.main-header-outer .header-innerblock .right-outerblock ul li {
-    width: auto;
-    height: auto;
-    float: left;
-    list-style: none;
-    padding: 0 0.75rem;
-}
+} */
+    
+    section.diagram-wrapper .elementor-container {
+        position: relative;
+        width: 560px;
+        height: 560px;
+        margin: 50px auto;
+    }
+    
+    section.diagram-wrapper .elementor-container:before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        border: 4px solid #f9ecdf;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    section.diagram-wrapper .elementor-container .elementor-column {
+        position: absolute;
+        width: 200px;
+    }
+    
+    section.diagram-wrapper .elementor-element-aeb7bbb {
+        transform: translate(-50%, -40%);
+        left: 50%;
+    }
+    
+    .elementor-element-879c11a {
+        left: -9%;
+        top: 25%;
+    }
+    
+    .elementor-element-21fe6ed {
+        right: -7%;
+        top: 25%;
+    }
+    
+    .elementor-element-d3af9fa {
+        top: 83%;
+        left: -9%;
+    }
+    
+    .elementor-element-f4293e6 {
+        top: 83%;
+        right: -7%;
+    }
+    
+    section.diagram-wrapper img.attachment-large.size-large {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    
+    section.diagram-wrapper h6.elementor-heading-title.elementor-size-default {
+        line-height: 1.5rem;
+    }
+    
+    .service-section {
+        padding-bottom: 120px;
+    }
+    
+    section.diagram-wrapper .elementor-element {
+        margin-bottom: 0px;
+    }
+    
+    .diagram-steps {
+        top: 11px;
+        z-index: 99;
+    }
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< FAQ Page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    
+    .faq-section .elementor-accordion-item {
+        width: 100%;
+        color: #fff;
+        overflow: hidden;
+        margin-bottom: 24px;
+        background: #fff;
+        font-size: 24px;
+        border: 0 !important;
+    }
+    
+    .faq-section .elementor-accordion .elementor-tab-content {
+        border: 0 !important;
+    }
+    
+    .faq-section .elementor-accordion .elementor-tab-title {
+        padding: 24px 40px !important;
+    }
+    /* accordion icon  */
+    
+    .elementor-accordion .elementor-tab-title .elementor-accordion-icon.elementor-accordion-icon-left {
+        float: right !important;
+        text-align: right !important;
+    }
+    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Media Queries >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    
+    @media only screen and (max-width:767px) {
+        .faq-hero-title h3 {
+            font-size: 2rem;
+        }
+        .faq-hero-content p {
+            font-size: 1rem;
+        }
+        .faq-section .elementor-accordion-title {
+            font-size: 1rem;
+        }
+        .faq-contact-section h4.qa-items {
+            font-size: 24px;
+        }
+        section.diagram-wrapper .elementor-container:before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            border: 4px solid #f9ecdf;
+            width: 50%;
+            height: 50%;
+            border-radius: 100%;
+        }
+    }
+    /************************************/
+    /*     
+    section.field-outerblock .elementor-container {
+        position: relative;
+        width: 560px;
+        height: 560px;
+        margin: 50px auto;
+    } */
+    /* section.field-outerblock .elementor-container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        border: 4px solid #f9ecdf;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    } */

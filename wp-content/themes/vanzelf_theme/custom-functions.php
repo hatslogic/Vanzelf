@@ -9,3 +9,10 @@ function add_theme_styles()
                     
                 }
                 add_action('wp_enqueue_scripts', 'add_theme_styles');
+function add_theme_scripts()
+{
+    //For scripts
+    wp_enqueue_script('customscript', get_template_directory_uri() . '/dist/scripts/main.js', array('jquery'), 1.1, true);
+}
+
+add_action('wp_enqueue_scripts', 'add_theme_scripts');

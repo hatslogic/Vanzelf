@@ -1,0 +1,49 @@
+[31-May-2021 07:33:01 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 34
+[31-May-2021 07:33:09 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 34
+[31-May-2021 07:33:27 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 34
+[31-May-2021 07:33:30 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 34
+[31-May-2021 07:36:46 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 34
+[04-Jun-2021 03:52:51 UTC] PHP Fatal error:  Uncaught Error: Class 'TwentyTwenty_Walker_Page' not found in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php:60
+Stack trace:
+#0 /home/vanzelf/public_html/wp-includes/template.php(730): require_once()
+#1 /home/vanzelf/public_html/wp-includes/template.php(676): load_template('/home/vanzelf/p...', true, Array)
+#2 /home/vanzelf/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/index.php(15): get_header()
+#4 /home/vanzelf/public_html/wp-includes/template-loader.php(106): include('/home/vanzelf/p...')
+#5 /home/vanzelf/public_html/wp-blog-header.php(19): require_once('/home/vanzelf/p...')
+#6 /home/vanzelf/public_html/index.php(17): require('/home/vanzelf/p...')
+#7 {main}
+  thrown in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 60
+[04-Jun-2021 03:53:26 UTC] PHP Fatal error:  Uncaught Error: Class 'TwentyTwenty_Walker_Page' not found in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php:60
+Stack trace:
+#0 /home/vanzelf/public_html/wp-includes/template.php(730): require_once()
+#1 /home/vanzelf/public_html/wp-includes/template.php(676): load_template('/home/vanzelf/p...', true, Array)
+#2 /home/vanzelf/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/index.php(15): get_header()
+#4 /home/vanzelf/public_html/wp-includes/template-loader.php(106): include('/home/vanzelf/p...')
+#5 /home/vanzelf/public_html/wp-blog-header.php(19): require_once('/home/vanzelf/p...')
+#6 /home/vanzelf/public_html/index.php(17): require('/home/vanzelf/p...')
+#7 {main}
+  thrown in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 60
+[04-Jun-2021 03:53:33 UTC] PHP Fatal error:  Uncaught Error: Class 'TwentyTwenty_Walker_Page' not found in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php:60
+Stack trace:
+#0 /home/vanzelf/public_html/wp-includes/template.php(730): require_once()
+#1 /home/vanzelf/public_html/wp-includes/template.php(676): load_template('/home/vanzelf/p...', true, Array)
+#2 /home/vanzelf/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/index.php(15): get_header()
+#4 /home/vanzelf/public_html/wp-includes/template-loader.php(106): include('/home/vanzelf/p...')
+#5 /home/vanzelf/public_html/wp-blog-header.php(19): require_once('/home/vanzelf/p...')
+#6 /home/vanzelf/public_html/index.php(17): require('/home/vanzelf/p...')
+#7 {main}
+  thrown in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 60
+[04-Jun-2021 03:53:38 UTC] PHP Fatal error:  Uncaught Error: Class 'TwentyTwenty_Walker_Page' not found in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php:60
+Stack trace:
+#0 /home/vanzelf/public_html/wp-includes/template.php(730): require_once()
+#1 /home/vanzelf/public_html/wp-includes/template.php(676): load_template('/home/vanzelf/p...', true, Array)
+#2 /home/vanzelf/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/index.php(15): get_header()
+#4 /home/vanzelf/public_html/wp-includes/template-loader.php(106): include('/home/vanzelf/p...')
+#5 /home/vanzelf/public_html/wp-blog-header.php(19): require_once('/home/vanzelf/p...')
+#6 /home/vanzelf/public_html/index.php(17): require('/home/vanzelf/p...')
+#7 {main}
+  thrown in /home/vanzelf/public_html/wp-content/themes/vanzelf_theme/header.php on line 60

@@ -1,3 +1,35 @@
 [18-May-2021 13:22:57 UTC] WordPress databasefout Unknown column 'wp_zelfvan' in 'field list' bij query SELECT wp_zelfvan
 [18-May-2021 13:22:57 UTC] WordPress databasefout Incorrect table name '' bij query INSERT INTO `` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', '&NV+Ys_R3eOUJ=a0_ c`C|24*Ucf%F;LD.c,c`d?+|!zREV^:9D&fj(R%84okb%p', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) gemaakt door wp_print_scripts, wp_scripts, WP_Scripts->__construct, WP_Scripts->init, do_action_ref_array('wp_default_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_default_scripts, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option
 [18-May-2021 13:22:57 UTC] WordPress databasefout Incorrect table name '' bij query INSERT INTO `` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'USH4F)0#B|Kp8Fhg BkyRr2^[[kB^l3*wji{aKiyQ7.-k<R[pj,D&m:??2m{>Sw4', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) gemaakt door wp_print_scripts, wp_scripts, WP_Scripts->__construct, WP_Scripts->init, do_action_ref_array('wp_default_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_default_scripts, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option
+[28-May-2021 10:02:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_meta() on boolean in /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php:281
+Stack trace:
+#0 /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php(162): ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->save_conditions(NULL, Array)
+#1 [internal function]: ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->ajax_save_theme_template_conditions(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#2 /home/vanzelf/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#3 /home/vanzelf/public_html/wp-includes/class-wp-hook.php(292): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#4 /home/vanzelf/public_html/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /home/vanzelf/publi in /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php on line 281
+[28-May-2021 11:35:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_meta() on boolean in /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php:281
+Stack trace:
+#0 /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php(162): ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->save_conditions(NULL, Array)
+#1 [internal function]: ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->ajax_save_theme_template_conditions(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#2 /home/vanzelf/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#3 /home/vanzelf/public_html/wp-includes/class-wp-hook.php(292): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#4 /home/vanzelf/public_html/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /home/vanzelf/publi in /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php on line 281
+[28-May-2021 12:09:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_meta() on boolean in /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php:281
+Stack trace:
+#0 /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php(162): ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->save_conditions(NULL, Array)
+#1 [internal function]: ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->ajax_save_theme_template_conditions(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#2 /home/vanzelf/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#3 /home/vanzelf/public_html/wp-includes/class-wp-hook.php(292): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#4 /home/vanzelf/public_html/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /home/vanzelf/publi in /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php on line 281
+[03-Jun-2021 05:16:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_meta() on boolean in /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php:281
+Stack trace:
+#0 /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php(162): ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->save_conditions(NULL, Array)
+#1 [internal function]: ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->ajax_save_theme_template_conditions(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#2 /home/vanzelf/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#3 /home/vanzelf/public_html/wp-includes/class-wp-hook.php(292): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#4 /home/vanzelf/public_html/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /home/vanzelf/publi in /home/vanzelf/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php on line 281
