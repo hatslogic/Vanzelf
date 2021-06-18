@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <header class="main-header-outer">
 	<div class="header-innerblock">
 		<div class="logo-continer">
-			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/vanzelf_logo.svg" alt="Logo"></a>
+			<a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/vanzelf_logo.svg" alt="Logo"></a>
 		</div>
 		<div class="right-outerblock">
 			<div class="nav-content"> 
